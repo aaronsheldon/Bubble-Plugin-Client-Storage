@@ -1,0 +1,38 @@
+{
+    "caption": "Get",
+    "doc": "When passed a key name, will return that key's value.",
+    "fields": {
+        "AAV": {
+            "caption": "When passed a key name, will return that key's value.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        },
+        "AAZ": {
+            "caption": "Local Query",
+            "doc": "Whether or not the local or the session storage was queried. \"Yes\" local storage. \"No\" session storage.",
+            "editor": "DynamicValue",
+            "name": "local",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAe": {
+            "caption": "Keys",
+            "doc": "Keys to retrieve values for from the storage.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "keys",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAg": {
+            "caption": "Query Context",
+            "doc": "Identifier of the latest storage query, developer specified.",
+            "editor": "DynamicValue",
+            "name": "context",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        }
+    }
+}

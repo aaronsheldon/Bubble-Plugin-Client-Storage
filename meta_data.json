@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "technical",
+        "1": "productivity",
+        "2": "containers",
+        "3": "data (things)"
+    },
+    "description": "A thin Bubble wrapper around the Web Storage Browser API.",
+    "image": "//meta.cdn.bubble.io/f1682111031710x355629905466956500/database-svgrepo-com.svg",
+    "license": "open_source",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/API/Storage",
+    "name": "Client Storage",
+    "plugin_instructions": "Add the element to your page and enjoy the actions, events, and states."
+}

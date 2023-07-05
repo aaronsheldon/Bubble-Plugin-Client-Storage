@@ -1,0 +1,47 @@
+{
+    "caption": "Add",
+    "doc": "When passed a key name and value, will add that key to the storage, or update that key's value if it already exists.",
+    "fields": {
+        "AAU": {
+            "caption": "When passed a key name and value, will add that key to the storage, or update that key's value if it already exists.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        },
+        "AAY": {
+            "caption": "Local Query",
+            "doc": "Whether or not the local or the session storage was queried. \"Yes\" local storage. \"No\" session storage.",
+            "editor": "DynamicValue",
+            "name": "local",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAh": {
+            "caption": "Keys",
+            "doc": "Keys to add to the storage.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "keys",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAi": {
+            "caption": "Values",
+            "doc": "Value to add to the storage.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "values",
+            "rank": 3,
+            "value": "text"
+        },
+        "AAj": {
+            "caption": "Query Context",
+            "doc": "Identifier of the latest storage query, developer specified.",
+            "editor": "DynamicValue",
+            "name": "context",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        }
+    }
+}

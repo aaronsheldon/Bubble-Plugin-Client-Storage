@@ -1,0 +1,86 @@
+{
+    "add_is_visible": false,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 32,
+        "width": 32
+    },
+    "display": "Browser Storage",
+    "events": {
+        "AAR": {
+            "caption": "Queried",
+            "doc": "Storage query is complete.",
+            "name": "queried"
+        }
+    },
+    "fields": {
+        "AAK": {
+            "caption": "Element to access the local and session storage of the browser.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "icon": "ion-android-folder",
+    "states": {
+        "AAE": {
+            "caption": "Local Keys",
+            "doc": "List of the keys in the persistent local storage.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\t// Announce\n    return Array.from({ length: localStorage.length }, (_, i) => { return localStorage.key(i); });\n}"
+            },
+            "is_list": true,
+            "name": "localkeys",
+            "value": "text"
+        },
+        "AAF": {
+            "caption": "Session Keys",
+            "doc": "List of the keys in the ephemeral session storage.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\t// Announce\n    return Array.from({ length: sessionStorage.length }, (_, i) => { return sessionStorage.key(i); });\n}"
+            },
+            "is_list": true,
+            "name": "sessionkeys",
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "Local Query",
+            "doc": "Whether or not the local or the session storage was queried: \"Yes\" local storage; \"No\" session storage.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    // Not set\n\treturn null;\n}"
+            },
+            "is_list": false,
+            "name": "local",
+            "value": "boolean"
+        },
+        "AAH": {
+            "caption": "Keys",
+            "doc": "Keys that was part of the latest storage query. If a value was not found or specified the key is dropped from the list.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    // Not set\n\treturn [];\n}"
+            },
+            "is_list": true,
+            "name": "keys",
+            "value": "text"
+        },
+        "AAI": {
+            "caption": "Values",
+            "doc": "Values that was part of the latest storage query. If a value was not found it is dropped from the list.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    // Not set\n\treturn [];\n}"
+            },
+            "is_list": true,
+            "name": "values",
+            "value": "text"
+        },
+        "AAT": {
+            "caption": "Query Context",
+            "doc": "Identifier of the latest storage query, developer specified.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    // Not set\n\treturn null;\n}"
+            },
+            "name": "context",
+            "value": "text"
+        }
+    }
+}

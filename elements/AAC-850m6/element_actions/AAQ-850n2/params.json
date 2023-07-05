@@ -1,0 +1,29 @@
+{
+    "caption": "Clear",
+    "doc": "When invoked, will empty all keys out of the storage.",
+    "fields": {
+        "AAX": {
+            "caption": "When invoked, will empty all keys out of the storage.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        },
+        "AAb": {
+            "caption": "Local Query",
+            "doc": "Whether or not the local or the session storage was queried. \"Yes\" local storage. \"No\" session storage.",
+            "editor": "DynamicValue",
+            "name": "local",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAc": {
+            "caption": "Query Context",
+            "doc": "Identifier of the latest storage query, developer specified.",
+            "editor": "DynamicValue",
+            "name": "context",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        }
+    }
+}

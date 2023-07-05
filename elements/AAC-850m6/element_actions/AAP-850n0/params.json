@@ -1,0 +1,38 @@
+{
+    "caption": "Delete",
+    "doc": "When passed a key name, will remove that key from the storage.",
+    "fields": {
+        "AAW": {
+            "caption": "When passed a key name, will remove that key from the storage.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        },
+        "AAa": {
+            "caption": "Local Query",
+            "doc": "Whether or not the local or the session storage was queried. \"Yes\" local storage. \"No\" session storage.",
+            "editor": "DynamicValue",
+            "name": "local",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAd": {
+            "caption": "Keys",
+            "doc": "Keys to remove from the storage.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "keys",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAf": {
+            "caption": "Query Context",
+            "doc": "Identifier of the latest storage query, developer specified.",
+            "editor": "DynamicValue",
+            "name": "context",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        }
+    }
+}
