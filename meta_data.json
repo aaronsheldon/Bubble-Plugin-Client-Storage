@@ -10,5 +10,6 @@
     "license": "open_source",
     "link": "https://developer.mozilla.org/en-US/docs/Web/API/Storage",
     "name": "Client Storage",
-    "plugin_instructions": "Add the element to your page and enjoy the actions, events, and states."
+    "plugin_instructions": "Add the element to your page and enjoy the actions, events, and states.",
+    "sa_node_version": 18
 }
